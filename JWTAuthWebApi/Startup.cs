@@ -35,7 +35,7 @@ namespace JWTAuthWebApi
                     {
                         ValidateIssuer = true,
                         ValidateAudience = true,
-                       // ValidateLifetime = true,
+                        ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
                         ValidIssuer = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("Token")["JwtIssuer"],
                         ValidAudience = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("Token")["JwtIssuer"],
